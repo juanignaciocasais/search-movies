@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import {ButtonBackToHome} from '../components/ButtonBackToHome'
+
 const API_KEY = '6140f1ea'
 
 export class Detail extends Component {
     static propTypes = {
-        id: PropTypes.string
+        match: PropTypes.shape({
+            params: PropTypes.object,
+            isExact: PropTypes.bool,
+            path: PropTypes.string,
+            url: PropTypes.string
+        })
     }
 
     state = { movie: {} }
@@ -20,19 +27,20 @@ export class Detail extends Component {
     }
 
     _goBack() {
-        //window.history.back()
+        window.history.back()
     }
 
     componentDidMount () {
-        const { id } = this.props
-        this._fetchMovie({ id })
+        console.log(this.props)
+        const { movieId } = this.props.match.params
+        this._fetchMovie({ id: movieId })
     }
     
     render() {
         const { Title, Poster, Actors, Metascore, Plot } = this.state.movie
         return (
             <div>
-            <button onClick={this._goBack}>Volver</button>
+            <ButtonBackToHome />
             <h1>{Title}</h1>
             <img src={Poster} alt={Title}/>
             <h3>{Actors}</h3>
