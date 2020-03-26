@@ -17,7 +17,7 @@ export class SearchForm extends Component {
         fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${ inputMovie }`)
         .then(res => res.json())
         .then(results => {
-            const { Search, totalResults } = results
+            const { Search = [], totalResults = "0" } = results
             console.log({Search, totalResults})
             this.props.onResults(Search)
         })
@@ -32,7 +32,8 @@ export class SearchForm extends Component {
                             className="input" 
                             onChange={this._handleChange}
                             type="text" 
-                            placeholder="Movie to search..." />
+                            placeholder="Movie to search..." 
+                        />
                     </div>
                     <div className="control">
                         <button className="button is-info">
