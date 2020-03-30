@@ -38,19 +38,21 @@ export class Detail extends Component {
     }
     
     render() {
-        const { Title, Poster, Plot, Actors, Year, Director, Awards, Genre } = this.state.movie
+        const { Title, Poster, Plot, Actors, Year, Director, Awards, Genre, imdbRating } = this.state.movie
         return (
             <div>
-                <ButtonBackToHome />    
                 <div>
                     <img className= "poster" src={Poster} alt={Title}/>
                     <div className= "textDetail">
                         <h1 className="titleMovie"><b>{Title} </b>({Year})</h1>
                         <p className="plot"><b>Plot: </b>{Plot}</p>
-                        <h3 className="actors"><b>Actors: </b> {Actors}</h3>
-                        <h3 className="actors"><b>Director: </b> {Director}</h3>
-                        <h3 className="actors"><b>Awards: </b> {Awards}</h3>
-                        <h3 className="actors"><b>Genre: </b> {Genre}</h3>
+                        <h3><b>Actors: </b> {Actors}</h3>
+                        <h3><b>Director: </b> {Director}</h3>
+                        <h3><b>Awards: </b> {Awards}</h3>
+                        <h3 className="genre"><b>Genre: </b> {Genre}</h3>   
+                        <h3 className="imdbRating"><b>ImdbRating:</b> {imdbRating}<img className="starImage" src="http://pluspng.com/img-png/star-hd-png-star-png-image-yildiz-png-3580.png" alt="Star HD PNG"/></h3>
+                        
+                        <ButtonBackToHome />
                     </div>
                 </div>
             </div>
