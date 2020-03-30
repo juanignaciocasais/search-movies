@@ -15,8 +15,16 @@
     padding: 16px;
 }
 
-.MoviesList-item { 
+.MoviesList-item {
     margin-bottom: 24px;
     width: 28%;
     height: 100%;
+}
+
+.MoviesList-item:hover {
+    transform: scale(1.025);
+}
+
+.image {
+    border-radius: 20px;
 }
