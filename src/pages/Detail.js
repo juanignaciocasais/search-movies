@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import {ButtonBackToHome} from '../components/ButtonBackToHome'
+import './DetailStyle.css'
 
 const API_KEY = '6140f1ea'
 
@@ -40,12 +41,15 @@ export class Detail extends Component {
         const { Title, Poster, Actors, Year, Plot } = this.state.movie
         return (
             <div>
-            <ButtonBackToHome />
-            <h1>{Title}</h1>
-            <img src={Poster} alt={Title}/>
-            <h3>Actors: {Actors}</h3>
-            <span>Year: {Year}</span>
-            <p>Plot: {Plot}</p>
+                <ButtonBackToHome />    
+                <div>
+                    <img className= "poster" src={Poster} alt={Title}/>
+                    <div className= "textDetail">
+                        <h1 className="titleMovie"><b>{Title} </b>({Year})</h1>
+                        <h3 className="actors"><b>Actors: </b> {Actors}</h3>
+                        <p className="plot"><b>Plot: </b>{Plot}</p>
+                    </div>
+                </div>
             </div>
         )
     }

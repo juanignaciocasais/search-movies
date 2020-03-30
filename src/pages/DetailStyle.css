@@ -1,0 +1,16 @@
+.textDetail {
+    margin-top: 30px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.titleMovie {
+    margin-bottom: 15px;
+}
+
+.poster {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
+    float: left;
+}

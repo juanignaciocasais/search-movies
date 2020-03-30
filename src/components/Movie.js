@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../App.css';
 
 import {Link} from 'react-router-dom'
 
@@ -18,8 +17,8 @@ export class Movie extends Component {
         return (
             <Link to={`${process.env.PUBLIC_URL}/detail/${id}`} className="card">
                 <div className="card-image">
-                    <figure className="image">
-                    <img
+                    <figure >
+                    <img className="image"
                         alt={title}
                         src={poster}
                     />
