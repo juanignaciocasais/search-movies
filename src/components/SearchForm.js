@@ -14,7 +14,7 @@ export class SearchForm extends Component {
     _handleSubmit = (e) => {
         e.preventDefault()
         const { inputMovie } = this.state
-        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${ inputMovie }`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${ inputMovie }&type=movie`)
         .then(res => res.json())
         .then(results => {
             const { Search = [], totalResults = "0" } = results
