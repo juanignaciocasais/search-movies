@@ -38,7 +38,7 @@ export class Detail extends Component {
     }
     
     render() {
-        const { Title, Poster, Actors, Year, Plot } = this.state.movie
+        const { Title, Poster, Plot, Actors, Year, Director, Awards, Genre } = this.state.movie
         return (
             <div>
                 <ButtonBackToHome />    
@@ -46,8 +46,11 @@ export class Detail extends Component {
                     <img className= "poster" src={Poster} alt={Title}/>
                     <div className= "textDetail">
                         <h1 className="titleMovie"><b>{Title} </b>({Year})</h1>
-                        <h3 className="actors"><b>Actors: </b> {Actors}</h3>
                         <p className="plot"><b>Plot: </b>{Plot}</p>
+                        <h3 className="actors"><b>Actors: </b> {Actors}</h3>
+                        <h3 className="actors"><b>Director: </b> {Director}</h3>
+                        <h3 className="actors"><b>Awards: </b> {Awards}</h3>
+                        <h3 className="actors"><b>Genre: </b> {Genre}</h3>
                     </div>
                 </div>
             </div>
