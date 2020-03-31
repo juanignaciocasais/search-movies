@@ -13,7 +13,7 @@ Para correr localmente este proyecto debemos:
 2. Abrir la consola ( mi ejemplo es en Ubuntu) con _Ctrl+Alt+t_
 3. Ubicarse en la carpeta del proyeto y ejecutar _npm install_
 4. Y para visualizarlo en el navegador en modo desarrollo debemos ejecutar _npm start_ <br />
-#[http://localhost:3000/search-movies]<br />
+[http://localhost:3000/search-movies]<br />
 La página se volverá a cargar auntomáticamente si realiza modificaciones. <br />
 También se pueden ver errores en la consola.
 
