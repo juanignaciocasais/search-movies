@@ -10,12 +10,12 @@ En esta webApp realizo las consultas a la aPI de http://www.omdbapi.com
 Para correr localmente este proyecto debemos:
 
 1. Hacer un Pull del mismo
-2. Abrir la consola ( mi ejemplo es en Ubuntu) con #Ctrl+Alt+t
-3. Ubicarse en la carpeta del proyeto y ejecutar ##npm install_
-4. Y para visualizarlo en el navegador en modo desarrollo debemos ejecutar # _npm start_ <br />
+2. Abrir la consola ( mi ejemplo es en Ubuntu) con _Ctrl+Alt+t_
+3. Ubicarse en la carpeta del proyeto y ejecutar _npm install_
+4. Y para visualizarlo en el navegador en modo desarrollo debemos ejecutar _npm start_ <br />
 #[http://localhost:3000/search-movies]<br />
 La página se volverá a cargar auntomáticamente si realiza modificaciones. <br />
 También se pueden ver errores en la consola.
 
 5. Una vez terminado el proyecto puedes crear la aplicación para producción en la carpeta `build`. <br />
-ejecutando ###npm run build_
+ejecutando _npm run build_
