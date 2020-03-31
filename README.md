@@ -1,28 +1,19 @@
-Este proyecto es un buscador de películas, en la página de inicio puede ingresar el nombre de la película y clickeando "Search" van a aparecer todas las opciones disponibles. Luego puede seleccionar cualquiera de ellas para abrir la pantalla de detalles de la misma.
+Esta Web App fue creada con [Create React App](https://github.com/facebook/create-react-app) y se trata de un buscador de películas.
+En la página de inicio puede ingresar el nombre de la película y clickeando "Search" van a aparecer todas las opciones disponibles. Luego puede seleccionar cualquiera de ellas para abrir la pantalla de detalles de la misma.
 
-Se puede visualizar ingresando a # https://juanignaciocasais.github.io/search-movies/
+Se puede visualizar ingresando a https://juanignaciocasais.github.io/search-movies/
 
 En esta webApp realizo las consultas a la aPI de http://www.omdbapi.com
 
+Para correr localmente este proyecto debemos:
 
-
-Esta Web App fue creada con [Create React App](https://github.com/facebook/create-react-app).
-
-
-
-En el directorio del proyecto, puede ejecutar:
-
-### `npm start`
-
-Ejecuta la aplicación en modo de desarrollo. <br />
-Abra [http://localhost:3000/search-movies] (http://localhost:3000/search-movies) para verlo en el navegador.
-
+1. Hacer un Pull del mismo
+2. Abrir la consola ( mi ejemplo es en Ubuntu) con _Ctrl+Alt+t_
+3. Ubicarse en la carpeta del proyeto y ejecutar _npm install_
+4. Y para visualizarlo en el navegador en modo desarrollo debemos ejecutar _npm start_ <br />
+[http://localhost:3000/search-movies]<br />
 La página se volverá a cargar auntomáticamente si realiza modificaciones. <br />
 También se pueden ver errores en la consola.
 
-Una vez terminado el proyecto puedes creas la aplicación para producción en la carpeta `build`. <br />
-
-### `npm run build`
-
-Consulte la sección sobre [deployment] (https://facebook.github.io/create-react-app/docs/deployment) para obtener más información.
-
+5. Una vez terminado el proyecto puedes crear la aplicación para producción en la carpeta `build`. <br />
+ejecutando _npm run build_
