@@ -17,5 +17,5 @@ Para correr localmente este proyecto debemos:
 La página se volverá a cargar auntomáticamente si realiza modificaciones. <br />
 También se pueden ver errores en la consola.
 
-5. Una vez terminado el proyecto puedes crear la aplicación para producción en la carpeta _./build_. <br />
+5. Una vez terminado el proyecto puedes crear la aplicación para producción en la carpeta _"./build_". <br />
 ejecutando `npm run build`
