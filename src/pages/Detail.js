@@ -27,10 +27,6 @@ export class Detail extends Component {
         })
     }
 
-    _goBack() {
-        window.history.back()
-    }
-
     componentDidMount () {
         console.log(this.props)
         const { movieId } = this.props.match.params

@@ -28,3 +28,26 @@
 .image {
     border-radius: 20px;
 }
+
+@media screen and (max-width: 860px) {
+       
+    .MoviesList-item {
+        width: 49%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+       
+    .MoviesList-item {
+        width: 60%;
+        text-align: center;
+    }
+
+    .MoviesList{
+        justify-content:center;
+        padding: unset;
+        margin-top: 16px;
+    }
+
+}
