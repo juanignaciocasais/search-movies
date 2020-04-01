@@ -1,55 +1,21 @@
-Este proyecto es un buscador de películas, en la página de inicio puede ingresar el nombre de la película y clickeando "Search" van a aparecer todas las opciones disponibles. Luego puede seleccionar cualquiera de ellas para abrir la pantalla de detalles de la misma.
+### Search-movies-engine
 
-Esta Web App fue creada con [Create React App](https://github.com/facebook/create-react-app).
+Esta Web App fue creada con [Create React App](https://github.com/facebook/create-react-app) y se trata de un buscador de películas.
+En la página de inicio puede ingresar el nombre de la película y clickeando "Search" van a aparecer todas las opciones disponibles. Luego puede seleccionar cualquiera de ellas para abrir la pantalla de detalles de la misma.
 
-## Scripts Disponibles
+Se puede visualizar ingresando a https://juanignaciocasais.github.io/search-movies/
 
-En el directorio del proyecto, puede ejecutar:
+En esta webApp realizo las consultas a la aPI de http://www.omdbapi.com
 
-### `npm start`
+Para correr localmente este proyecto debemos:
 
-Ejecuta la aplicación en modo de desarrollo. <br />
-Abra [http://localhost:3000/search-movies] (http://localhost:3000/search-movies) para verlo en el navegador.
-
+1. Hacer un Pull del mismo
+2. Abrir la consola ( mi ejemplo es en Ubuntu) con _Ctrl+Alt+t_
+3. Ubicarse en la carpeta del proyeto y ejecutar _npm install_
+4. Y para visualizarlo en el navegador en modo desarrollo debemos ejecutar _npm start_ <br />
+[http://localhost:3000/search-movies]<br />
 La página se volverá a cargar auntomáticamente si realiza modificaciones. <br />
 También se pueden ver errores en la consola.
 
-Una vez terminado el proyecto puedes creas la aplicación para producción en la carpeta `build`. <br />
-
-### `npm run build`
-
-Consulte la sección sobre [deployment] (https://facebook.github.io/create-react-app/docs/deployment) para obtener más información.
-
-## Aprende más
-
-Puede obtener más información en la [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-Para aprender React, consulte la [Documentación de React] (https://reactjs.org/).
-
-### Implementación
-
- https://facebook.github.io/create-react-app/docs/deployment
-
-### Code Splitting
-
-https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Hacer una aplicación web progresiva
-
-https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Configuración Avanzada
-
-https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+5. Una vez terminado el proyecto puedes crear la aplicación para producción en la carpeta `build`. <br />
+ejecutando _npm run build_
